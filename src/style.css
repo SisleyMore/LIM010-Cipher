@@ -1,1 +1,56 @@
 /* Acá van tus reglas de estilo */
+body{
+    background-image: url("fondoprincipal.gif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+#bienvenida{
+  color: white;
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+  font-size: x-large;
+}
+
+#part1{
+  color: white;
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+  font-size: x-large;
+}
+
+#error{
+  color: white;
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+  font-size: x-large;
+}
+
+#part2{
+  color: white;
+  font-family: "Latin Modern Roman 10";
+  font-style: oblique;
+  font-size: x-large;
+}
+
+#boton_cifrar{
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #2079b0);
+  background-color: #008CBA;
+  /*background: transparent;*/
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  color: white;
+}
+#boton_descifrar{
+  background: transparent;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
+  background-color: #008CBA;
+  color: white;
+}
