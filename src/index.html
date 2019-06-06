@@ -9,8 +9,7 @@
     <center>
       <!--  primera vista-->
      <div id="bienvenida" >
-       <h1>¡Bienvenido!</h1>
-       <h2>"Hola, ingresa la contraseña"</h2>
+       <h2>"Ingresa la contraseña"</h2>
        <input type="password" id="contraseña" required="LABORATORIA" placeholder="Ingrese la contraseña"/>
        <button type="button" id="btn">INGRESAR</button>
      </div>
@@ -20,18 +19,20 @@
     </div>
     <!--  cuadro para cifrar-->
     <div id="part1" style=display:none>
-       <h2> Escribe tu mensaje aquí </h2>
-       <textarea name="textarea" rows="10" cols="50">Texto a cifrar</textarea>
+       <h2> Ingresa aquí tu mensaje: </h2>
+       <textarea name="textarea" id="texto" rows="10" cols="50">Texto a cifrar</textarea>
+       <input type="number" id="offset" min=1 />
     </div>
     <!--  BOTONES PARA CIFRADO -->
     <div id="botones" style=display:none>
         <button type="button" id="boton_cifrar">CIFRAR</button>
         <button type="button" id="boton_descifrar">DESCIFRAR</button>
+        <button type="reset" id="limpiar">LIMPIAR</button>
     </div>
    <!--  cuadro para descifrar-->
    <div id="part2" style=display:none>
        <h2> Respuesta </h2>
-       <textarea name="textarea1" rows="10" cols="50">Texto descifrado</textarea>
+       <textarea name="textarea1" id="resultado" rows="10" cols="50">Texto descifrado</textarea>
    </div>
 
     <header></header>
