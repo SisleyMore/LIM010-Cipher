@@ -15,21 +15,21 @@ let intentos=0;
 btn.addEventListener('click', () => {
   const rptacorrecta = paswd.value;
   if (rptacorrecta ==="LABORATORIA") {
-    bienvenida.style.display="none";
-    error.style.display="none";
-    part1.style.display="block";
-    part2.style.display="block";
-    botones.style.display="block";
+    bienvenida.classList.add('hide');
+    error.classList.add('hide');
+    part1.classList.remove('hide');
+    part2.classList.remove('hide');
+    botones.classList.remove('hide');
   }
   else {
     intentos++
     alert("Numero de intentos: "+intentos)
     if (intentos===3) {
-    bienvenida.style.display="none";
-    error.style.display="block";
-    part1.style.display="none";
-    part2.style.display="none";
-    botones.style.display="none";
+    bienvenida.classList.add('hide');
+    error.classList.remove('hide');
+    part1.classList.add('hide');
+    part2.classList.add('hide');
+    botones.classList.add('hide');
 
     }
   }

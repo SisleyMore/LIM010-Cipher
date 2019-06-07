@@ -1,6 +1,6 @@
 /* Acá van tus reglas de estilo */
 body{
-    background-image: url("fondoprincipal.gif");
+    background-image: url("FONDOPRINCIPAL.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
@@ -69,4 +69,7 @@ body{
   line-height: 1.7;
   margin-left: 30px;
   margin-top: 125px;
+}
+.hide{
+  display: none;
 }
