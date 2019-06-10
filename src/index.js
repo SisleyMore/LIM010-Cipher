@@ -6,10 +6,11 @@ const error= document.getElementById('error');
 const part1= document.getElementById('part1');
 const part2= document.getElementById('part2');
 const botones= document.getElementById('botones');
-const texto= document.getElementById('texto');
-const resultado= document.getElementById('resultado');
-const boton_cifrar= document.getElementById('boton_cifrar');
-const boton_descifrar= document.getElementById('boton_descifrar');
+let texto= document.getElementById('texto');//cuadro para ingresar texto
+let resultado= document.getElementById('resultado');//cuadro para el mensaje ya cifrado o descifrado
+const botonCifrar= document.getElementById('botonCifrar');
+const botonDescifrar= document.getElementById('botonDescifrar');
+let offset= document.getElementById('offset');
 let intentos=0;
 
 btn.addEventListener('click', () => {
@@ -35,20 +36,38 @@ btn.addEventListener('click', () => {
   }
 });
 
-boton_cifrar.addEventListener('click', () => {
-  const textoingresado= texto.value
-        for(let i=0; i<texto.length; i++) { //el for recorrera las letras del texto a cifrar//
+botonCifrar.addEventListener('click', () => {
+  let textoingresado= texto.value;
+  let desplazamiento= offset.value;
+  //document.getElementById("texto").value =cipher.encode(textoingresado, desplazamiento);
+  let msjcifrado="";
+  for (let i = 0; i < textoingresado.length; i++) {
+  let codeAscii= textoingresado.charCodeAt(i);
+  console.log(codeAscii);
+     if (codeAscii>=65) {
+       let cifrado= (codeAscii-65 + desplazamiento)% 26 + 65;
+       msjcifrado += String.fromCharCode(cifrado);
+     }
 
-        if (parseInt(texto[i])%1 === 0) //condicionar para no ingresar numeros//
-           texto = prompt("Por favor ingrese un texto sin numeros ni espacios");
 
-        const ubicacionCesar=(texto.toUpperCase().charCodeAt(i) - 65 + 33) % 26 + 65;
+  }
+resultado.value= msjcifrado;
+});
 
-        const palabraCifrada= String.fromCharCode(ubicacionCesar);
+botonDescifrar.addEventListener('click', () => {
+  let textoingresado= texto.value;
+  let desplazamiento= offset.value;
 
-    cifrado+= palabraCifrada; //acumular las letras cifradas//
+  let msjcifrado="";
+  for (var i = 0; i < textoingresado.length; i++) {
+  let codeAscii= textoingresado.charCodeAt(i);
+      if (codeAscii>=65) {
+        let descifrado= (codeAscii-65 - desplazamiento)% 26 + 65;
+        msjcifrado += String.fromCharCode(descifrado);
+      }
+  }
 
-    }
+resultado.value= msjcifrado;
 
 
 });
