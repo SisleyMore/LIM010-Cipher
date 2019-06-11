@@ -1,28 +1,28 @@
 /* Acá van tus reglas de estilo */
-body{
+/* body{
     background-image: url("FONDOPRINCIPAL.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-}
+} */
 
 #bienvenida{
-  color: white;
+  color:black;
   font-family: "Latin Modern Roman 10";
   font-style: oblique;
   font-size: x-large;
 }
 
 #part1{
-  color: white;
+  color: black;
   font-family: "Latin Modern Roman 10";
   font-style: oblique;
   font-size: x-large;
 }
 
 #error{
-  color: white;
+  color:black;
   font-family: "Latin Modern Roman 10";
   font-style: oblique;
   font-size: x-large;

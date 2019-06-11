@@ -45,8 +45,12 @@ botonCifrar.addEventListener('click', () => {
   let codeAscii= textoingresado.charCodeAt(i);
   console.log(codeAscii);
      if (codeAscii>=65) {
-       let cifrado= (codeAscii-65 + desplazamiento)% 26 + 65;
+       let cifrado= (codeAscii-65 + parseInt(desplazamiento))% 26 + 65;
+       console.log(cifrado);
        msjcifrado += String.fromCharCode(cifrado);
+     }
+     else {
+       msjcifrado+= textoingresado[i]
      }
 
 
@@ -58,16 +62,24 @@ botonDescifrar.addEventListener('click', () => {
   let textoingresado= texto.value;
   let desplazamiento= offset.value;
 
-  let msjcifrado="";
-  for (var i = 0; i < textoingresado.length; i++) {
+  let msjdescifrado="";
+  for (let i = 0; i < textoingresado.length; i++) {
   let codeAscii= textoingresado.charCodeAt(i);
+  console.log(codeAscii);
       if (codeAscii>=65) {
-        let descifrado= (codeAscii-65 - desplazamiento)% 26 + 65;
-        msjcifrado += String.fromCharCode(descifrado);
+        let descifrado= (codeAscii-65 -  parseInt(desplazamiento))% 26 + 65;
+         if (descifrado<65) {
+           descifrado= descifrado+26;
+         }
+        msjdescifrado += String.fromCharCode(descifrado);
       }
+      else {
+        msjdescifrado+= textoingresado[i]
+      }
+
   }
 
-resultado.value= msjcifrado;
+resultado.value= msjdescifrado;
 
 
 });
