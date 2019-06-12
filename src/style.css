@@ -1,11 +1,21 @@
 /* Acá van tus reglas de estilo */
-/* body{
-    background-image: url("FONDOPRINCIPAL.jpg");
-    background-repeat: no-repeat;
+.box{
+    /* background-image: url("FONDOPRINCIPAL.jpg"); */
+    /* background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    background-size: cover;
-} */
+    background-size: cover; */
+   text-align:center;
+   background-color:#eaeabe;
+   height:350px;
+   width:350px;
+   padding:100px;
+   top:50%;
+   font-size:13px;
+   margin:50px;
+
+   border:azure;
+}
 
 #bienvenida{
   color:black;
