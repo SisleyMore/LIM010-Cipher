@@ -18,29 +18,33 @@
        <h1> Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
     </div>
     <!--  cuadro para cifrar-->
+    <div class="pantalla2">
     <div id="part1" class="hide">
-      <form>
+
        <h2> Ingresa aquí tu mensaje: </h2>
        <textarea name="textarea" id="texto" rows="10" cols="50"></textarea>
-       <input type="number" id="offset" min=1 />
+       <input type="number" id="offset" min="1" />
     </div>
     <!--  BOTONES PARA CIFRADO -->
     <div id="botones" class="hide">
+      <form>
         <button type="button" id="botonCifrar">CIFRAR</button>
         <button type="button" id="botonDescifrar">DESCIFRAR</button>
         <button type="reset" id="limpiar">LIMPIAR</button>
-      <form>
+      </form>
     </div>
    <!--  cuadro para descifrar-->
    <div id="part2" class="hide">
        <h2> Respuesta </h2>
        <textarea name="textarea1" id="resultado" rows="10" cols="50"></textarea>
    </div>
+  </div>
 
     <header></header>
     <main></main>
     <footer></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
+  </center>
   </body>
 </html>
