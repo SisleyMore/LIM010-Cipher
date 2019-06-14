@@ -6,43 +6,44 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <center>
-      <!--  primera vista-->
-     <div id="bienvenida" class="box" >
-       <h2>"Ingresa la contraseña"</h2>
-       <input type="password" id="contraseña" value="LABORATORIA" placeholder="Ingrese la contraseña"/>
-       <button type="button" id="btn">INGRESAR</button>
+   <header> @ Secret emails @</header>
+    <main>
+      <center>
+        <!--  primera vista-->
+       <div id="bienvenida" class="box" >
+         <h2>"Ingresa la contraseña"</h2>
+         <input type="password" id="contraseña" value="LABORATORIA" placeholder="Ingrese la contraseña"/>
+         <button type="button" id="btn" class="boton"></button>
+       </div>
+      <!--  ventana de error-->
+       <div id="error" class="hide">
+         <h1> Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
+      </div>
+      <!--  cuadro para cifrar-->
+      <div id="pantalla2" class="pantalla2 hide">
+      <div id="part1" class="hide">
+        <form>
+         <h2> Ingresa aquí tu mensaje: </h2>
+         <textarea name="textarea" id="texto" rows="10" cols="50"></textarea>
+         <input type="number" id="offset" min="1" />
+      </div>
+      <!--  BOTONES PARA CIFRADO -->
+      <div id="botones" class="hide">
+
+          <button type="button" id="botonCifrar">CIFRAR</button>
+          <button type="button" id="botonDescifrar">DESCIFRAR</button>
+          <button type="reset" id="limpiar">LIMPIAR</button>
+
+      </div>
+     <!--  cuadro para descifrar-->
+     <div id="part2" class="hide">
+         <h2> Respuesta </h2>
+         <textarea name="textarea1" id="resultado" rows="10" cols="50"></textarea>
      </div>
-    <!--  ventana de error-->
-     <div id="error" class="hide">
-       <h1> Ya utilizaste todos tus intentos, en este momento no podrás ingresar</h1>
+     <form>
     </div>
-    <!--  cuadro para cifrar-->
-    <div class="pantalla2">
-    <div id="part1" class="hide">
-
-       <h2> Ingresa aquí tu mensaje: </h2>
-       <textarea name="textarea" id="texto" rows="10" cols="50"></textarea>
-       <input type="number" id="offset" min="1" />
-    </div>
-    <!--  BOTONES PARA CIFRADO -->
-    <div id="botones" class="hide">
-      <form>
-        <button type="button" id="botonCifrar">CIFRAR</button>
-        <button type="button" id="botonDescifrar">DESCIFRAR</button>
-        <button type="reset" id="limpiar">LIMPIAR</button>
-      </form>
-    </div>
-   <!--  cuadro para descifrar-->
-   <div id="part2" class="hide">
-       <h2> Respuesta </h2>
-       <textarea name="textarea1" id="resultado" rows="10" cols="50"></textarea>
-   </div>
-  </div>
-
-    <header></header>
-    <main></main>
-    <footer></footer>
+    </main>
+    <footer>By Sisley 2019</footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </center>

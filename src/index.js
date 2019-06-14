@@ -10,6 +10,7 @@ let texto= document.getElementById('texto');//cuadro para ingresar texto
 let resultado= document.getElementById('resultado');//cuadro para el mensaje ya cifrado o descifrado
 const botonCifrar= document.getElementById('botonCifrar');
 const botonDescifrar= document.getElementById('botonDescifrar');
+const pantalla2=document.getElementById('pantalla2')
 let offset= document.getElementById('offset');
 let intentos=0;
 
@@ -21,6 +22,9 @@ btn.addEventListener('click', () => {
     part1.classList.remove('hide');
     part2.classList.remove('hide');
     botones.classList.remove('hide');
+    pantalla2.classList.remove('hide');
+
+
   }
   else {
     intentos++
