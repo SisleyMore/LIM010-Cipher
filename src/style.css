@@ -1,7 +1,7 @@
 /* Acá van tus reglas de estilo */
 .box{
-   border:azure;
-   background-image: url("fondo1.png");
+  border:azure;
+  background-image: url("fondo1.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -28,23 +28,23 @@ header{
 }
 .boton{
   background-image: url("fondoboton.jpg");
- background-repeat:no-repeat;
- background-position:center;
- background-size:cover;
- border-radius:100px;
- height:10vh;
- width:10vh;
- border:transparent;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+  border-radius:100px;
+  height:10vh;
+  width:10vh;
+  border:transparent;
 }
 
 .pantalla2{
 
- background-image: url(fondo2.jpg);
- background-repeat: no-repeat;
- background-position: center center;
- background-size: cover;
- height:100vh;
- width:100vh;
+  background-image: url(fondo2.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height:100vh;
+  width:100vh;
 }
 
 #bienvenida{
@@ -56,7 +56,7 @@ header{
   text-shadow: 0 0 3px black;
 }
 
-#part1{
+.letra{
   color: white;
   font-family: "Latin Modern Roman 10";
   font-style: oblique;
@@ -71,56 +71,20 @@ header{
   font-size: x-large;
 }
 
-#part2{
+.estilosBoton{
+  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
+  background-image: linear-gradient(to bottom, #eb94d0, #8e29de);
+  background-color: #008CBA;
+  border: 2px solid #0099CC;
+  border-radius: 6px;
   color: white;
-  font-family: "Latin Modern Roman 10";
-  font-style: oblique;
-  font-size: x-large;
-  text-shadow: 0 0 15px black;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 
-#botonCifrar{
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-   background-image: linear-gradient(to bottom, #eb94d0, #8e29de);
-  background-color: #008CBA;
-  /*background: transparent;*/
-  border: 2px solid #0099CC;
-  border-radius: 6px;
-  color: white;
-  margin-top: 50px;
-  margin-right: 20px;
-}
-#botonDescifrar{
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
- background-image: linear-gradient(to bottom, #eb94d0, #8e29de);
-  background-color: #008CBA;
-  /*background: transparent;*/
-  border: 2px solid #0099CC;
-  border-radius: 6px;
-  color: white;
-  margin-top: 50px;
-  margin-right: 20px;
-}
-#limpiar{
-  background-image: -webkit-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -moz-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -ms-linear-gradient(top, #eb94d0, #2079b0);
-  background-image: -o-linear-gradient(top, #eb94d0, #2079b0);
-   background-image: linear-gradient(to bottom, #eb94d0, #8e29de);
-  background-color: #008CBA;
-  /*background: transparent;*/
-  border: 2px solid #0099CC;
-  border-radius: 6px;
-  color: white;
-  margin-top: 50px;
-  margin-right: 20px;
-}
 #offset{
   position: absolute;
   cursor: pointer;
