@@ -10,11 +10,11 @@ window.cipher = {
            // console.log(cifrado);
           msjcifrado += String.fromCharCode(cifrado);
         }
-        // if (codeAscii>=97 && codeAscii<=122) {
-        //   let cifrado= (codeAscii-97 + parseInt(desplazamiento))% 26 +97;
-        //   msjcifrado += String.fromCharCode(cifrado);
+        else if (codeAscii>=97 && codeAscii<=122) {
+          let cifrado= (codeAscii-97 + parseInt(desplazamiento))% 26 +97;
+          msjcifrado += String.fromCharCode(cifrado);
           
-        // }
+        }
 
         else {
            msjcifrado+= textoingresado[i]     /* Para que reconozca espacios*/
@@ -39,11 +39,11 @@ window.cipher = {
               
             msjdescifrado += String.fromCharCode(descifrado);
           }
-          // if (codeAscii>=97 && codeAscii<=122) {
-          //   let descifrado= (codeAscii-97 -  parseInt(desplazamiento))% 26 + 97;
-          //   msjdescifrado += String.fromCharCode(descifrado);
+          else if (codeAscii>=97 && codeAscii<=122) {
+            let descifrado= (codeAscii-97 -  parseInt(desplazamiento))% 26 + 97;
+            msjdescifrado += String.fromCharCode(descifrado);
             
-          // }
+          }
           else {
             msjdescifrado+= textoingresado[i]
           }
