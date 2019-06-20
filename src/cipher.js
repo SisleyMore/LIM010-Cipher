@@ -41,8 +41,11 @@ window.cipher = {
           }
           else if (codeAscii>=97 && codeAscii<=122) {
             let descifrado= (codeAscii-97 -  parseInt(desplazamiento))% 26 + 97;
-            msjdescifrado += String.fromCharCode(descifrado);
             
+            if (descifrado<97) {
+              descifrado= descifrado+26;
+             }
+            msjdescifrado += String.fromCharCode(descifrado);
           }
           else {
             msjdescifrado+= textoingresado[i]
